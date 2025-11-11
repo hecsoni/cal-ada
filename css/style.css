@@ -1,0 +1,257 @@
+/* === Reset y base (igual que antes) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #0e0e0e;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* === Header === */
+.header {
+  background: #0e0e0e;
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(0,255,128,0.1);
+}
+
+.logo {
+  width: 120px;
+}
+
+/* === Menú === */
+.nav-menu {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav-menu a {
+  color: #bbb;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: #00ff80;
+}
+
+.btn-whatsapp {
+  background: #00ff80;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+  background: #00cc66;
+}
+
+/* === Menú móvil === */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-toggle img {
+  width: 30px;
+  filter: invert(100%);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+/* === HERO === */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 5%;
+  background: linear-gradient(90deg, #0e0e0e 60%, #111);
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  color: #aaa;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
+
+.buttons a {
+  margin-right: 10px;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #00ff80;
+  color: #000;
+}
+
+.btn-secondary {
+  border: 2px solid #00ff80;
+  color: #00ff80;
+}
+
+.hero-image {
+  background: url('../assets/img/telhado.jpg') center/cover;
+  width: 40%;
+  height: 350px;
+  border-radius: 20px;
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* === Serviços === */
+.servicos {
+  padding: 80px 5%;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.card {
+  background: #111;
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px rgba(0,255,128,0.3);
+  transform: translateY(-8px);
+}
+
+/* === Sobre === */
+.sobre {
+  background: #101010;
+  padding: 80px 5%;
+  text-align: center;
+}
+
+/* === Contato === */
+.contato {
+  padding: 80px 5%;
+  text-align: center;
+}
+
+/* === WhatsApp flotante === */
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: #00ff80;
+  padding: 14px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0,255,128,0.4);
+  transition: 0.3s;
+  z-index: 9999;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-float img {
+  width: 35px;
+}
+
+/* === Animación scroll reveal === */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === Responsividad === */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 250px;
+    margin-top: 20px;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: #111;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    transition: 0.4s;
+  }
+
+  .nav.active .nav-menu {
+    right: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .btn-whatsapp {
+    display: none;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}

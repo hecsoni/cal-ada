@@ -1,95 +1,609 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Serviços profissionais de limpeza em Curitiba: calçadas, calhas e telhados. Atendimento rápido via WhatsApp. Deixe sua casa limpa, segura e bonita!">
-  <title>Limpeza Curitiba | Calçadas, Calhas e Telhados</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="assets/img/logo.png" />
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Calçada Limpa Curitiba | Hidrojateamento de Calçadas em Curitiba e Região
+    </title>
+    <meta
+      name="description"
+      content="Hidrojateamento profissional de calçadas em Curitiba: limpeza essencial, anti-limo e serviço premium com selante. Produtos biodegradáveis e resultado duradouro."
+    />
+    <meta
+      name="keywords"
+      content="hidrojateamento Curitiba, limpeza de calçadas Curitiba, remover limo, anti-limo, selante impermeabilizante, limpeza de garagem, remoção de óleo"
+    />
+    <link rel="canonical" href="https://www.calcadalimpacuritiba.com.br/" />
+    <meta name="theme-color" content="#0b0f0d" />
 
-<body>
-  <header class="header">
-    <div class="container">
-      <img src="assets/img/logo.png" alt="Logo Limpeza Curitiba" class="logo">
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Calçada Limpa Curitiba | Hidrojateamento Profissional"
+    />
+    <meta
+      property="og:description"
+      content="Limpeza essencial, anti-limo e revitalização com proteção. Resultado visível em Curitiba e região."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://www.calcadalimpacuritiba.com.br/"
+    />
+    <meta
+      property="og:image"
+      content="https://www.calcadalimpacuritiba.com.br/hero-calçada.jpg"
+    />
 
-      <!-- Botón hamburguesa -->
-      <div class="menu-toggle" id="menu-toggle">
-        <img src="assets/icons/menu.svg" alt="Menu">
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Calçada Limpa Curitiba",
+        "image": "https://www.calcadalimpacuritiba.com.br/hero-calçada.jpg",
+        "url": "https://www.calcadalimpacuritiba.com.br/",
+        "telephone": "+55-41-99999-9999",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Curitiba",
+          "addressRegion": "PR",
+          "addressCountry": "BR"
+        },
+        "areaServed": "Curitiba e Região Metropolitana",
+        "priceRange": "R$",
+        "description": "Hidrojateamento profissional de calçadas, anti-limo e aplicação de selante impermeabilizante.",
+        "sameAs": []
+      }
+    </script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Barra de Navegação -->
+    <header class="nav">
+      <div class="container nav__inner">
+        <a href="#topo" class="logo" aria-label="Calçada Limpa Curitiba">
+          <span class="logo__icon">CLC</span>
+          <span class="logo__text">Calçada Limpa Curitiba</span>
+        </a>
+        <nav class="menu" aria-label="Navegação principal">
+          <a href="#servicos">Serviços</a>
+          <a href="#como-funciona">Como Funciona</a>
+          <a href="#galeria">Resultados</a>
+          <a href="#contato" class="btn btn--primary">Solicitar Orçamento</a>
+        </nav>
+        <button class="hamburger" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="topo" class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <h1 class="reveal-up">
+            Hidrojateamento Premium de Calçadas em Curitiba
+          </h1>
+          <p class="reveal-up delay-1">
+            Remoção de sujeira, limo e manchas com alta pressão e técnica
+            profissional. Limpeza que valoriza seu patrimônio — com proteção
+            para durar mais.
+          </p>
+          <div class="hero__cta reveal-up delay-2">
+            <a href="#servicos" class="btn btn--primary">Conheça os Serviços</a>
+            <a href="#contato" class="btn btn--ghost">Agendar Avaliação</a>
+          </div>
+          <ul class="hero__badges reveal-up delay-3" aria-label="Destaques">
+            <li>Atendimento em Curitiba e região</li>
+            <li>Produtos biodegradáveis</li>
+            <li>Equipe especializada</li>
+          </ul>
+        </div>
+        <div class="hero__media">
+          <img
+            src="asset/hero.png"
+            alt="Antes e depois de calçada limpa com hidrojateamento em Curitiba"
+            class="parallax-float"
+            width="1280"
+            height="720"
+          />
+        </div>
+      </div>
+      <div class="hero__shine"></div>
+    </section>
+
+    <!-- Trust -->
+    <section class="trust container reveal-up">
+      <p>
+        Escolhido por condomínios, comércios e residências que valorizam a
+        aparência.
+      </p>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="services container">
+      <header class="section-head reveal-up">
+        <h2>Serviços de Hidrojateamento em Curitiba</h2>
+        <p>
+          Claros, escalonados e com opção de upgrade conforme sua necessidade.
+        </p>
+      </header>
+
+      <div class="cards">
+        <!-- Serviço 1 -->
+        <article
+          class="card reveal-up"
+          itemscope
+          itemtype="https://schema.org/Service"
+        >
+          <meta itemprop="serviceType" content="Limpeza Essencial" />
+          <div class="card__tag">Essencial</div>
+          <img
+            src="servico-essencial.jpg"
+            alt="Limpeza Essencial de calçadas com alta pressão"
+            class="card__img"
+            width="800"
+            height="600"
+          />
+          <div class="card__body">
+            <h3 itemprop="name">Limpeza Essencial</h3>
+            <p itemprop="description">
+              Hidrojateamento para remoção de sujeira superficial, poeira e
+              detritos. Ideal para manutenção regular.
+            </p>
+            <ul class="card__list">
+              <li>Alta pressão</li>
+              <li>Sujeira recente</li>
+              <li>Manutenção periódica</li>
+            </ul>
+            <div class="card__cta">
+              <span class="price">A partir de R$</span>
+              <a href="#contato" class="btn btn--primary btn--small"
+                >Quero Orçamento</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <!-- Serviço 2 -->
+        <article
+          class="card reveal-up delay-1"
+          itemscope
+          itemtype="https://schema.org/Service"
+        >
+          <meta itemprop="serviceType" content="Limpeza Profunda (Anti-Limo)" />
+          <div class="card__tag card__tag--popular">Mais Procurado</div>
+          <img
+            src="servico-profundo.jpg"
+            alt="Limpeza Profunda anti-limo em calçadas"
+            class="card__img"
+            width="800"
+            height="600"
+          />
+          <div class="card__body">
+            <h3 itemprop="name">Limpeza Profunda (Anti-Limo)</h3>
+            <p itemprop="description">
+              Aplicação de produto biodegradável para soltar limo, musgo e mofo,
+              seguida de hidrojateamento.
+            </p>
+            <ul class="card__list">
+              <li>Tratamento químico biodegradável</li>
+              <li>Remoção de limo e mofo</li>
+              <li>Ideal para áreas úmidas</li>
+            </ul>
+            <div class="card__cta">
+              <span class="price">A partir de R$</span>
+              <a href="#contato" class="btn btn--primary btn--small"
+                >Quero Orçamento</a
+              >
+            </div>
+          </div>
+        </article>
+
+        <!-- Serviço 3 -->
+        <article
+          class="card reveal-up delay-2"
+          itemscope
+          itemtype="https://schema.org/Service"
+        >
+          <meta itemprop="serviceType" content="Revitalização e Proteção" />
+          <div class="card__tag card__tag--premium">Premium</div>
+          <img
+            src="servico-premium.jpg"
+            alt="Revitalização e aplicação de selante impermeabilizante"
+            class="card__img"
+            width="800"
+            height="600"
+          />
+          <div class="card__body">
+            <h3 itemprop="name">Revitalização e Proteção</h3>
+            <p itemprop="description">
+              Inclui Limpeza Profunda, remoção de manchas específicas (opcional)
+              e aplicação de selante impermeabilizante.
+            </p>
+            <ul class="card__list">
+              <li>Inclui Limpeza Profunda</li>
+              <li>Remoção de manchas (óleo, ferrugem, tinta)</li>
+              <li>Selante para maior durabilidade</li>
+            </ul>
+            <div class="card__cta">
+              <span class="price">Sob consulta</span>
+              <a href="#contato" class="btn btn--primary btn--small"
+                >Quero Orçamento</a
+              >
+            </div>
+          </div>
+        </article>
       </div>
 
-      <nav class="nav" id="nav">
-        <ul class="nav-menu">
-          <li><a href="#home" class="active">Início</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-
-      <a href="https://wa.me/5541999999999" target="_blank" class="btn-whatsapp">Fale Conosco</a>
-    </div>
+     
+      <!-- Add-ons (Cards com fotos) -->
+<section class="addons-cards container">
+  <header class="section-head reveal-up">
+    <h2>Serviços Adicionais</h2>
+    <p>Complementos ideais para um resultado completo e duradouro.</p>
   </header>
 
-  <section id="home" class="hero reveal">
-    <div class="hero-content">
-      <h1>Limpeza Profissional em Curitiba</h1>
-      <p>Calçadas, calhas e telhados limpos e protegidos com eficiência e segurança.</p>
-      <div class="buttons">
-        <a href="#servicos" class="btn-primary">Nossos Serviços</a>
-        <a href="https://wa.me/5541999999999" target="_blank" class="btn-secondary">Pedir Orçamento</a>
+  <div class="cards">
+    <!-- Add-on 1 -->
+    <article class="card reveal-up" itemscope itemtype="https://schema.org/Service">
+      <meta itemprop="serviceType" content="Limpeza de muros e fachadas baixas" />
+      <div class="card__tag">Add-on</div>
+      <img src="addon-muros-fachadas.jpg" alt="Limpeza de muros e fachadas baixas" class="card__img" width="800" height="600"/>
+      <div class="card__body">
+        <h3 itemprop="name">Limpeza de muros e fachadas baixas</h3>
+        <p itemprop="description">Remoção de sujeira, limo e respingos em muros/texturas, com cuidado para não danificar a superfície.</p>
+        <ul class="card__list">
+          <li>Hidrojateamento controlado</li>
+          <li>Tratamento anti-limo quando necessário</li>
+          <li>Acabamento uniforme</li>
+        </ul>
+        <div class="card__cta">
+          <span class="price">Adicional</span>
+          <a href="#contato" class="btn btn--primary btn--small">Incluir no Orçamento</a>
+        </div>
       </div>
-    </div>
-    <div class="hero-image"></div>
-  </section>
+    </article>
 
-  <section id="servicos" class="servicos reveal">
-    <h2>Nossos Serviços</h2>
-    <div class="cards">
-      <div class="card hover-zoom">
-        <img src="assets/img/calçada.jpg" alt="Limpeza de calçadas">
-        <h3>Limpeza de Calçadas</h3>
-        <p>Removemos sujeiras, limo e manchas, deixando sua calçada com aparência renovada e segura.</p>
+    <!-- Add-on 2 -->
+    <article class="card reveal-up delay-1" itemscope itemtype="https://schema.org/Service">
+      <meta itemprop="serviceType" content="Limpeza de pisos de garagem (remoção de óleo)" />
+      <div class="card__tag">Add-on</div>
+      <img src="addon-garagem-oleo.jpg" alt="Limpeza de pisos de garagem com foco em remoção de óleo" class="card__img" width="800" height="600"/>
+      <div class="card__body">
+        <h3 itemprop="name">Pisos de garagem (remoção de óleo)</h3>
+        <p itemprop="description">Desengordurante específico e técnica adequada para dissolver e remover manchas de óleo e graxa.</p>
+        <ul class="card__list">
+          <li>Produto desengordurante</li>
+          <li>Hidrojateamento direcionado</li>
+          <li>Resultado visível</li>
+        </ul>
+        <div class="card__cta">
+          <span class="price">Adicional</span>
+          <a href="#contato" class="btn btn--primary btn--small">Incluir no Orçamento</a>
+        </div>
       </div>
-      <div class="card hover-zoom">
-        <img src="assets/img/calha.jpg" alt="Limpeza de calhas">
-        <h3>Limpeza de Calhas</h3>
-        <p>Evite infiltrações e danos! Fazemos limpeza completa e manutenção preventiva de calhas.</p>
+    </article>
+
+    <!-- Add-on 3 -->
+    <article class="card reveal-up delay-2" itemscope itemtype="https://schema.org/Service">
+      <meta itemprop="serviceType" content="Limpeza pós-obra (pó de cimento e tinta)" />
+      <div class="card__tag">Add-on</div>
+      <img src="addon-pos-obra.jpg" alt="Limpeza pós-obra removendo pó de cimento e respingos de tinta" class="card__img" width="800" height="600"/>
+      <div class="card__body">
+        <h3 itemprop="name">Limpeza pós-obra</h3>
+        <p itemprop="description">Remoção de pó de cimento, respingos de tinta e resíduos de obra com cuidado especializado.</p>
+        <ul class="card__list">
+          <li>Remoção de resíduos finos</li>
+          <li>Produtos adequados por material</li>
+          <li>Acabamento pronto para uso</li>
+        </ul>
+        <div class="card__cta">
+          <span class="price">Adicional</span>
+          <a href="#contato" class="btn btn--primary btn--small">Incluir no Orçamento</a>
+        </div>
       </div>
-      <div class="card hover-zoom">
-        <img src="assets/img/telhado.jpg" alt="Limpeza de telhados">
-        <h3>Limpeza de Telhados</h3>
-        <p>Removemos fungos, folhas e sujeiras, preservando a beleza e durabilidade do seu telhado.</p>
+    </article>
+    <!-- Add-on 4: Limpeza de calhas -->
+    <article class="card reveal-up delay-3" itemscope itemtype="https://schema.org/Service">
+      <meta itemprop="serviceType" content="Limpeza de calhas" />
+      <div class="card__tag">Add-on</div>
+      <img src="addon-calhas.jpg" alt="Limpeza de calhas com remoção de folhas e detritos" class="card__img" width="800" height="600"/>
+      <div class="card__body">
+        <h3 itemprop="name">Limpeza de calhas</h3>
+        <p itemprop="description">Remoção de folhas, detritos e areia das calhas, desobstrução dos condutores e teste de escoamento.</p>
+        <ul class="card__list">
+          <li>Desobstrução completa</li>
+          <li>Checagem de queda d’água</li>
+          <li>Prevenção de infiltrações</li>
+        </ul>
+        <div class="card__cta">
+          <span class="price">Adicional</span>
+          <a href="#contato" class="btn btn--primary btn--small">Incluir no Orçamento</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </article>
 
-  <section id="sobre" class="sobre reveal">
-    <h2>Sobre Nós</h2>
-    <p>Somos uma empresa de <strong>Curitiba</strong> especializada em limpeza residencial e comercial. Trabalhamos com equipamentos modernos, produtos seguros e uma equipe experiente.</p>
-    <ul>
-      <li><img src="assets/icons/check.svg" alt=""> Atendimento rápido e confiável</li>
-      <li><img src="assets/icons/check.svg" alt=""> Garantia de satisfação</li>
-      <li><img src="assets/icons/check.svg" alt=""> Preço justo e acessível</li>
-    </ul>
-  </section>
+    <!-- Add-on 5: Limpeza de telhados -->
+    <article class="card reveal-up delay-4" itemscope itemtype="https://schema.org/Service">
+      <meta itemprop="serviceType" content="Limpeza de telhados" />
+      <div class="card__tag">Add-on</div>
+      <img src="addon-telhados.jpg" alt="Limpeza de telhados com remoção de limo e sujeira" class="card__img" width="800" height="600"/>
+      <div class="card__body">
+        <h3 itemprop="name">Limpeza de telhados</h3>
+        <p itemprop="description">Remoção de limo, musgo e sujeira de telhas com técnica adequada e aplicação de tratamento quando necessário.</p>
+        <ul class="card__list">
+          <li>Anti-limo para telhas</li>
+          <li>Lavagem controlada</li>
+          <li>Melhora da drenagem</li>
+        </ul>
+        <div class="card__cta">
+          <span class="price">Adicional</span>
+          <a href="#contato" class="btn btn--primary btn--small">Incluir no Orçamento</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
 
-  <section id="contato" class="contato reveal">
-    <h2>Entre em Contato</h2>
-    <p>Agende sua limpeza hoje mesmo!</p>
-    <a href="https://wa.me/5541999999999" target="_blank" class="btn-whatsapp-large">Chamar no WhatsApp</a>
-  </section>
+    <!-- Como Funciona -->
+    <section id="como-funciona" class="how-it-works">
+      <div class="container">
+        <header class="section-head reveal-up">
+          <h2>Como Funciona</h2>
+          <p>Processo simples, resultado impecável.</p>
+        </header>
+        <div class="steps" role="list">
+          <div class="step reveal-up" role="listitem">
+            <div class="step__num">1</div>
+            <h4>Avaliação e Orçamento</h4>
+            <p>
+              Enviamos uma avaliação (presencial ou fotos) e o orçamento
+              detalhado.
+            </p>
+          </div>
+          <div class="step reveal-up delay-1" role="listitem">
+            <div class="step__num">2</div>
+            <h4>Pré-tratamento</h4>
+            <p>
+              Aplicamos produto biodegradável nas áreas com limo e manchas
+              persistentes.
+            </p>
+          </div>
+          <div class="step reveal-up delay-2" role="listitem">
+            <div class="step__num">3</div>
+            <h4>Hidrojateamento</h4>
+            <p>
+              Lavagem com alta pressão e técnica profissional para remoção
+              completa.
+            </p>
+          </div>
+          <div class="step reveal-up delay-3" role="listitem">
+            <div class="step__num">4</div>
+            <h4>Proteção (Opcional)</h4>
+            <p>
+              Aplicação de selante para prolongar a limpeza e evitar novas
+              manchas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <footer class="footer">
-    <p>© 2025 Limpeza Curitiba. Todos os direitos reservados.</p>
-  </footer>
+    <!-- Galeria -->
+    <section id="galeria" class="gallery container">
+      <header class="section-head reveal-up">
+        <h2>Antes e Depois</h2>
+        <p>Resultados que falam por si.</p>
+      </header>
+      <div class="masonry">
+        <figure class="masonry__item reveal-up">
+          <img
+            src="antes-depois-1.jpg"
+            alt="Antes e depois anti-limo em área sombreada"
+            width="800"
+            height="800"
+          />
+          <figcaption>Anti-limo em área sombreada</figcaption>
+        </figure>
+        <figure class="masonry__item reveal-up delay-1">
+          <img
+            src="antes-depois-2.jpg"
+            alt="Remoção de manchas de óleo em garagem"
+            width="800"
+            height="800"
+          />
+          <figcaption>Garagem com manchas de óleo</figcaption>
+        </figure>
+        <figure class="masonry__item reveal-up delay-2">
+          <img
+            src="antes-depois-3.jpg"
+            alt="Calçada revitalizada com selante"
+            width="800"
+            height="800"
+          />
+          <figcaption>Aplicação de selante premium</figcaption>
+        </figure>
+      </div>
+    </section>
 
-  <!-- Botón de WhatsApp flotante -->
-  <a href="https://wa.me/5541999999999" class="whatsapp-float" target="_blank">
-    <img src="assets/icons/whatsapp.svg" alt="WhatsApp">
-  </a>
+    <!-- Depoimentos -->
+    <section class="testimonials">
+      <div class="container">
+        <header class="section-head reveal-up">
+          <h2>O que nossos clientes dizem</h2>
+        </header>
+        <div class="testimonials__grid">
+          <blockquote class="testimonial reveal-up">
+            “Calçada parecia nova! O selante fez toda a diferença.” — Síndica,
+            Juvevê
+          </blockquote>
+          <blockquote class="testimonial reveal-up delay-1">
+            “Serviço rápido, limpo e profissionais atenciosos.” — Loja, Água
+            Verde
+          </blockquote>
+          <blockquote class="testimonial reveal-up delay-2">
+            “Anti-limo acabou com o escorregão na entrada.” — Residência, Mercês
+          </blockquote>
+        </div>
+      </div>
+    </section>
 
-  <script src="js/script.js"></script>
-</body>
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container cta__inner reveal-up">
+        <h3>Pronto para renovar sua calçada?</h3>
+        <p>
+          Solicite um orçamento sem compromisso. Respondemos rápido no horário
+          comercial.
+        </p>
+        <a href="#contato" class="btn btn--primary">Solicitar Orçamento</a>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contact">
+      <div class="container contact__grid">
+        <div class="contact__copy reveal-up">
+          <h2>Solicite seu Orçamento</h2>
+          <p>
+            Atendemos Curitiba e região metropolitana. Envie suas informações e
+            retornaremos em breve.
+          </p>
+          <ul class="contact__highlights">
+            <li>Atendimento via WhatsApp e e-mail</li>
+            <li>Visita técnica (quando necessário)</li>
+            <li>Pagamento facilitado</li>
+          </ul>
+        </div>
+        <form class="contact__form reveal-up" id="form-orcamento" novalidate>
+          <div class="form__row">
+            <label for="nome">Nome</label>
+            <input
+              id="nome"
+              name="nome"
+              type="text"
+              placeholder="Seu nome"
+              required
+            />
+            <span class="error" data-for="nome"></span>
+          </div>
+          <div class="form__row">
+            <label for="telefone">Telefone/WhatsApp</label>
+            <input
+              id="telefone"
+              name="telefone"
+              type="tel"
+              placeholder="(41) 9 9999-9999"
+              required
+            />
+            <span class="error" data-for="telefone"></span>
+          </div>
+          <div class="form__row">
+            <label for="email">E-mail</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="voce@exemplo.com"
+            />
+            <span class="error" data-for="email"></span>
+          </div>
+          <div class="form__row">
+            <label for="servico">Serviço</label>
+            <select id="servico" name="servico">
+              <option>Limpeza Essencial</option>
+              <option>Limpeza Profunda (Anti-Limo)</option>
+              <option>Revitalização e Proteção</option>
+              <option>Serviços Adicionais</option>
+            </select>
+          </div>
+          <div class="form__row">
+            <label for="mensagem">Mensagem</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="4"
+              placeholder="Área, tipo de piso e tempo desde a última limpeza."
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Enviar</button>
+          <p class="form__success" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <div class="logo footer__logo">
+            <span class="logo__icon">CLC</span>
+            <span class="logo__text">Calçada Limpa Curitiba</span>
+          </div>
+          <p>
+            Hidrojateamento profissional de calçadas, muros e pisos. Qualidade
+            que se vê.
+          </p>
+        </div>
+        <div class="footer__nav">
+          <a href="#servicos">Serviços</a>
+          <a href="#como-funciona">Como Funciona</a>
+          <a href="#galeria">Resultados</a>
+          <a href="#contato">Contato</a>
+        </div>
+        <div class="footer__contact">
+          <p>Curitiba · PR</p>
+          <p>
+            <a
+              href="https://wa.me/5541999999999"
+              target="_blank"
+              rel="nofollow noopener"
+              >WhatsApp: (41) 9 9999-9999</a
+            >
+          </p>
+          <p>
+            <a href="mailto:contato@calcadalimpacuritiba.com.br"
+              >contato@calcadalimpacuritiba.com.br</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>
+          © <span id="year"></span> Calçada Limpa Curitiba. Todos os direitos
+          reservados.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Botão WhatsApp Flutuante -->
+    <a
+      href="https://wa.me/5541999999999?text=Olá%2C%20gostaria%20de%20um%20orçamento%20para%20hidrojateamento%20de%20calçadas."
+      class="whatsapp-float"
+      id="whatsapp-float"
+      target="_blank"
+      rel="nofollow noopener"
+      aria-label="Fale conosco no WhatsApp"
+    >
+      <svg aria-hidden="true" viewBox="0 0 32 32" width="26" height="26">
+        <path
+          fill="currentColor"
+          d="M19.11 17.32c-.27-.14-1.58-.78-1.83-.87-.25-.09-.43-.14-.61.14-.18.27-.7.87-.86 1.04-.16.18-.32.2-.59.07-.27-.14-1.15-.42-2.2-1.33-.81-.72-1.36-1.61-1.52-1.88-.16-.27-.02-.42.12-.56.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.83-2.01-.22-.53-.45-.46-.61-.47-.16-.01-.34-.01-.52-.01-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29s.98 2.66 1.12 2.84c.14.18 1.93 2.95 4.67 4.06.65.28 1.16.45 1.56.58.66.21 1.27.18 1.75.11.53-.08 1.58-.64 1.81-1.25.22-.61.22-1.13.16-1.25-.07-.11-.25-.18-.52-.32zM16.01 5.33c-5.88 0-10.66 4.78-10.66 10.67 0 1.88.49 3.64 1.35 5.17L5.33 26.67l5.65-1.35c1.5.82 3.21 1.28 5.03 1.28 5.88 0 10.66-4.78 10.66-10.67s-4.78-10.67-10.66-10.67zm0 19.26c-1.65 0-3.19-.48-4.49-1.3l-.32-.2-3.36.8.72-3.28-.21-.34a8.92 8.92 0 0 1-1.37-4.78c0-4.95 4.02-8.98 8.99-8.98s8.99 4.03 8.99 8.98-4.03 9.02-8.99 9.02z"
+        />
+      </svg>
+    </a>
+
+    <button class="scroll-top" aria-label="Voltar ao topo">↑</button>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
